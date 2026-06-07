@@ -466,7 +466,11 @@ ul{list-style:none}
     linear-gradient(160deg,var(--navy-800),var(--navy-900));
   border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow-soft);
 }
-.lead-wrap h2{font-family:var(--font-display);font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em;line-height:1.05;margin-bottom:14px}
+.lead-wrap h2{font-family:var(--font-display);font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em;line-height:1.05;margin-bottom:14px;color:var(--on-dark)}
+/* La tarjeta del formulario es oscura aunque viva en una sección clara:
+   forzamos colores claros para que el eyebrow/texto no se pierdan. */
+.lead-wrap .eyebrow{color:var(--sky-soft)}
+.lead-wrap .eyebrow::before{background:var(--gold)}
 .lead-wrap .lead-perks{display:grid;gap:12px;margin-top:22px}
 .lead-wrap .lead-perks li{display:flex;gap:10px;color:var(--on-dark-soft);font-size:.94rem;align-items:center}
 .lead-wrap .lead-perks svg{width:18px;height:18px;color:var(--gold);flex:none}
@@ -1117,11 +1121,6 @@ ul{list-style:none}
       </div>
     </div>
 
-    <!-- Punto de venta: correo corporativo con dominio propio -->
-    <div class="email-note reveal">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.9H22l-6 4.3 2.3 6.8L12 16l-6.3 4 2.3-6.8-6-4.3h7.6L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      <span>Tu sitio incluye <b>correo corporativo con dominio propio</b> (ej. nombre@tudominio.com): más profesional, más confianza y total control de tu marca en cada mensaje.</span>
-    </div>
   </div>
 </section>
 </main>
