@@ -105,11 +105,9 @@ ul{list-style:none}
 .light .section-head p{color:var(--muted)}
 .light .eyebrow{color:var(--blue-700)}
 
-/* Texto destacado en degradado */
-.grad-text{
-  background:linear-gradient(100deg,var(--sky-soft),var(--green-soft) 60%,var(--gold));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
+/* Texto destacado en color sólido (sin degradado) */
+.grad-text{color:var(--sky-soft)}
+.light .grad-text{color:var(--blue-700)}
 
 /* =========================================================================
    NAVBAR
@@ -683,9 +681,8 @@ ul{list-style:none}
 
     <!-- Capa 3: contenido principal -->
     <div class="hero-content" data-layer="content">
-      <span class="hero-tag"><span class="dot"></span> Mercados en vivo · México y el mundo</span>
-      <h1>Decide con <span class="grad-text">datos</span>,<br/>no con corazonadas.</h1>
-      <p class="sub">Análisis bursátil, fondos de inversión, finanzas personales y cursos de trading. Toda la inteligencia financiera que necesitas, en un solo lugar.</p>
+      <h1>Entiende el mercado.<br/><span class="grad-text">Adelántate a él.</span></h1>
+      <p class="sub">Análisis bursátil, fondos de inversión, finanzas personales y cursos de trading: la inteligencia financiera que tus decisiones merecen, en un solo lugar.</p>
       <div class="hero-actions">
         <a href="#planes" class="btn btn-primary btn-lg">Ver planes</a>
         <a href="#contacto" class="btn btn-ghost btn-lg">Agenda una asesoría</a>
